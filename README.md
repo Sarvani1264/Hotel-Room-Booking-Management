@@ -21,4 +21,4 @@ Backend: Django (Python)
 
 Frontend: HTML, CSS, JavaScript (Django Templates)
 
-Database: SQLite (default) / MySQL (optional)
+Database: SQLite
