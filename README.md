@@ -1,4 +1,5 @@
-###Hotel Room Management App (Django)###
+**Hotel Room Management App (Django)**
+
 ##Overview
 This Hotel Room Management App is a web application developed using Django, aimed at helping hotel staff manage rooms, bookings, and customer details efficiently. It offers features such as room management, booking tracking, and user authentication to streamline hotel operations.
 
