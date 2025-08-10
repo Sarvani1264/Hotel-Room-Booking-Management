@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f5f7fa;
+        }
+        .confirmation-card {
+            margin-top: 60px;
+            padding: 40px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .highlight {
+            color: #007bff;
+            font-weight: 600;
+        }
+        .btn-back {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="confirmation-card mx-auto col-md-8">
+        <h2 class="mb-4 text-success">Booking Confirmed ✅</h2>
+
+        <p>Thank you for booking with us, <span class="highlight">{{ booking.customer_name }}</span>!</p>
+
+        <p>Your booking details:</p>
+        <ul class="list-group mb-3">
+            <li class="list-group-item"><strong>Room:</strong> {{ booking.room.name }} ({{ booking.room.roomnum }})</li>
+            <li class="list-group-item"><strong>Check-in:</strong> {{ booking.check_in }}</li>
+            <li class="list-group-item"><strong>Check-out:</strong> {{ booking.check_out }}</li>
+            <li class="list-group-item"><strong>Guests:</strong> {{ booking.num_guests }}</li>
+            <li class="list-group-item"><strong>Total Days:</strong> {{ booking.total_days }}</li>
+            <li class="list-group-item"><strong>Total Price:</strong> ₹{{ booking.total_price }}</li>
+        </ul>
+
+        <p>We’ve also sent a confirmation to <span class="highlight">{{ email }}</span>.</p>
+
+        <a href="{% url 'rooms' %}" class="btn btn-primary btn-back">← Back to Rooms</a>
+    </div>
+</div>
+
+</body>
+</html>

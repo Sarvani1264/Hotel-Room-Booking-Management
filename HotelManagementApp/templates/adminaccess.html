@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard - Hotel Management</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/adminaccess.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+    </header>
+    <nav>
+        <a href="{% url 'manage_rooms' %}">Manage Rooms</a>
+        <a href="{% url 'manage_bookings' %}">View Bookings</a>
+        <a href="{% url 'logout' %}">Logout</a>
+    </nav>
+    <main>
+        <div class="card">
+            <h2>Total Rooms</h2>
+            <p>{{ total_rooms }}</p>
+        </div>
+        <div class="card">
+            <h2>Rooms Types</h2>
+            <p>{{ room_types }}</p>
+        </div>
+        <div class="card">
+            <h2>Maximum Price</h2>
+            <p>{{ max_price }}</p>
+        </div>
+        <div class="card">
+            <h2>Minimum Price</h2>
+            <p>{{ min_price }}</p>
+        </div>
+    </main>
+</body>
+</html>
