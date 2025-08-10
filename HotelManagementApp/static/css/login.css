@@ -1,0 +1,89 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+div{
+    padding: 30px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(127, 206, 230, 0.8);
+    max-width: 800px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 20px;
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+nav .nav-item {
+    font-size: 20px;
+    font-weight: bold;
+}
+.logIn{
+    background-image: url("/static/images/login_bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-style: double;
+}
+.navbar{
+    padding-right: 40px;
+    padding-left: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    align-items: center;
+    border-radius: 25px;
+}
+.loginform{
+    margin-top: 10%;
+}
+.Registerform{
+    margin-top: 3%;
+}
+.loginform, .Registerform{
+    border-width: 3px;
+    border-style: solid;
+    border-color: black; 
+    border-radius: 15px;
+    background-color: rgba(127, 206, 230, 0.75);
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 10px;
+    height: fit-content;
+    align-items: center;
+}
+.loginform,#about,#contact,.Registerform{
+    padding: 30px;
+}
+input{
+    border-radius: 5px;
+    width: 200px;
+    height: 27px;
+}
+button{
+    border-radius: 5px;
+    width: fit-content;
+    padding: 6px;
+    background-color: rgba(0, 136, 255, 0.47);
+    text-align: center;
+    font-weight: bold;
+}
+#details{
+    background-image: url("/static/images/login_bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-style: double;
+    padding: 30px;
+}
+.Registerform label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.Registerform input {
+    width: 250px;
+    padding: 1px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,43 @@
+ body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background: #444;
+    overflow: hidden;
+}
+nav a {
+    float: left;
+    display: block;
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav a:hover {
+    background: #555;
+}
+main {
+    padding: 60px;
+    padding-left: 10%;
+}
+.card {
+    background: #fff;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    text-align: center;
+}
+.card h2 {
+    margin-top: 0;
+}
