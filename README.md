@@ -1,4 +1,4 @@
-##**Hotel Room Management App (Django)**##
+**Hotel Room Management App (Django)**
 
 **Overview**
 
